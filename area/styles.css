@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+body {
+    height: 100vh;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    overflow: hidden;
+    max-width:1440px;
+    text-align: center;
+    margin: auto;
+}
+
+header nav {
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+nav > a {
+    text-decoration: none;
+    margin: 1rem 0.5rem;
+    color: #1D1E2C;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    font-size: 10vh;
+}
+
+main {
+    height: 68vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0px;
+}
+
+.social-links li {
+    display: inline-block;
+    padding: 0 1rem 1rem 0;
+}
+
+footer img {
+    width: 2.5vw;
+}
+
+.button {
+    border-radius: 10000px;
+    outline: none;
+    background-color: #D8E1FF;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.button:hover {
+    background-color: #1D1E2C;
+    color: whitesmoke;
+}
+
+#calculate-area {
+    margin: auto;
+}
+
+.side-input {
+    display: inline-block;
+    padding: 1rem;
+    margin: 3rem 1rem;
+    height: 1rem;
+    width: 3rem;
+    background-color: #D8E1FF;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+#submit-sides {
+    display: block;
+    margin: 0 auto;
+}
+
+#area-output {
+    background-color: #D8E1FF;
+    margin: 1rem auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: fit-content;
+    border: 2px solid black;
+}
+.social-links ul li a {
+    transition: all 0.2s;
+}
+.social-links ul li a:hover {
+    transform: scale(1.25);    
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        font-size: 3vw;
+    }
+    header {
+        font-size: 7vh;
+    }
+    
+    header nav {
+        text-align: center;
+    }
+
+    nav > a {
+        font-size: 4vw;
+    }
+    main {
+        height: 55vh;
+    }
+    footer {
+        margin-top: 10vh;
+    }
+    footer img {
+        width: 7.5vw;
+    }
+
+    .side-input {
+        margin: 1rem auto;
+        display: block;
+        height: 1vw;
+        padding: 4vw;
+    }
+
+    #area-output {
+        height: 3vw;
+        font-size: 3vw;
+    }
+    
+}

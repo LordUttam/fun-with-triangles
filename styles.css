@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+body {
+    height: 100vh;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    font-size: 10vh;
+}
+
+main {
+    height: 68vh;
+    text-align: center;
+}
+
+.triangle-case {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: aquamarine;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #D8E1FF;
+    text-align: center;
+}
+
+#top-triangle {
+    position: relative;
+    flex-basis: 50%;
+}
+
+#left-triangle, #right-triangle {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+}
+
+#left-triangle {
+    left: 0;
+}
+
+#right-triangle {
+    right: 0;
+}
+
+.row-container {
+    text-align: center;
+    flex-basis: 50%;    
+} 
+
+.inverse-triangle {
+    display: inline-block;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    background-color: #96CDFF;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}
+
+.triangle p, .inverse-triangle p {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+
+.triangle p {
+    top: 50%;
+    color: #BE92A2;
+}
+
+.inverse-triangle p {
+    top: 65%;
+    color: #59656F;
+}
+
+.triangle:hover {
+    background-color: #1D1E2C;
+}
+
+.triangle:hover p {
+    color: whitesmoke;
+}
+
+.inverse-triangle:hover {
+    background-color: #1D1E2C;
+}
+
+.inverse-triangle:hover p {
+    color: whitesmoke;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0px;
+}
+
+.social-links li {
+    display: inline-block;
+    padding: 0 1rem 1rem 0;
+}
+
+footer img {
+    width: 2.5vw;
+}
+
+.button {
+    border-radius: 10000px;
+    outline: none;
+    background-color: #D8E1FF;
+    padding: 0.5rem 1rem;
+    width: 5rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.button:hover {
+    background-color: #1D1E2C;
+    color: whitesmoke;
+}
+
+#angle-check {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+}
+
+.angle-input {
+    display: inline-block;
+    padding: 1rem;
+    margin: 3rem 1rem;
+    height: 1rem;
+    width: 3rem;
+    background-color: #D8E1FF;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.angles-output {
+    background-color: #D8E1FF;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: fit-content;
+    border: 2px solid black;
+}
+
+
+
+@media screen and (orientation: portrait) {
+    body {
+        font-size: 3vw;
+    }
+    header {
+        font-size: 7vh;
+    }
+    main {
+        height: 55vh;
+    }
+    .triangle-case {
+        width: 80%;
+    }
+    footer {
+        margin-top: 10vh;
+    }
+    footer img {
+        width: 7.5vw;
+    }
+    
+}

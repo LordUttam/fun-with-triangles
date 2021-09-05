@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+body {
+    height: 100vh;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    overflow: auto;
+    max-width: 1440px;
+    text-align: center;
+    margin: auto;
+}
+
+
+header nav {
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+nav > a {
+    text-decoration: none;
+    margin: 1rem 0.5rem;
+    color: #1D1E2C;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    font-size: 10vh;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    max-width: 45%;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0px;
+}
+
+.social-links li {
+    display: inline-block;
+    padding: 0 1rem 1rem 0;
+}
+
+footer img {
+    width: 2.5vw;
+}
+
+.button {
+    border-radius: 10000px;
+    outline: none;
+    background-color: #D8E1FF;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.button:hover {
+    background-color: #1D1E2C;
+    color: whitesmoke;
+}
+ 
+#quiz-form {
+    overflow-y: auto;
+    border: 2px solid #1D1E2C;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+} 
+
+.question-container {
+    width: 85%;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.question-container:nth-of-type(odd) {
+    background-color: #F3F4F6;
+}
+
+input {
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    display: inline-block;
+}
+
+#submit-quiz {
+    display: block;
+    margin: 2.5vh auto;
+}
+
+
+#score-output {
+    background-color: #D8E1FF;
+    margin: 1rem auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: fit-content;
+    border: 2px solid black;
+}
+.social-links ul li a {
+    transition: all 0.2s;
+}
+.social-links ul li a:hover {
+    transform: scale(1.25);    
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        font-size: 3vw;
+    }
+
+    header {
+        font-size: 7vh;
+    }
+
+    header nav {
+        text-align: center;
+    }
+
+    nav > a {
+        font-size: 4vw;
+    }
+
+    main {
+        margin: auto;
+        max-width: none;
+    }
+
+    #quiz-form {
+        border: none;
+    }
+
+    footer {
+        margin-top: 2vh;
+    }
+
+    .question-container {
+        width: 85%;
+        margin: 1rem auto;
+        padding: 1rem 0;
+    }
+
+    footer img {
+        width: 7.5vw;
+    }
+
+    input {
+        margin: 1rem auto;
+        display: inline;
+    }
+
+    #score-output {
+        height: 3vw;
+        font-size: 3vw;
+    }
+    
+}
