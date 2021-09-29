@@ -30,7 +30,7 @@ function calculateScore(event) {
     index += 1;
   }
   console.log(score);
-  scoreOutput.innerText = score;
+  scoreOutput.innerText = "You scored " + score + " out of 10";
 }
 quizForm.addEventListener("submit", calculateScore);
 // As we want to use submit btn inside form, we add the event listener to form itself and not the button.
