@@ -1,5 +1,4 @@
 const quizForm = document.querySelector("#quiz-form");
-const submitBtn = document.querySelector("#submit-quiz");
 const scoreOutput = document.querySelector("#score-output");
 
 const answers = [
@@ -15,7 +14,9 @@ const answers = [
   "no",
 ];
 
-function calculateScore() {
+function calculateScore(event) {
+  event.preventDefault();
+  console.log(event);
   let score = 0;
   let index = 0;
   const data = new FormData(quizForm);
@@ -31,4 +32,5 @@ function calculateScore() {
   console.log(score);
   scoreOutput.innerText = score;
 }
-submitBtn.addEventListener("click", calculateScore);
+quizForm.addEventListener("submit", calculateScore);
+// As we want to use submit btn inside form, we add the event listener to form itself and not the button.
